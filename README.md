@@ -8,7 +8,7 @@ But I need it ;)
 ---
 
 ```bash
-$ docker build -t binakot/uwsgi-nginx-flask:python3.8-alpine .
-$ docker run --name python-app -p 80:80 -d binakot/uwsgi-nginx-flask:python3.8-alpine
+$ docker build -t binakot/uwsgi-nginx-flask:python3.9-alpine .
+$ docker run --rm --name python-app -p 80:80 binakot/uwsgi-nginx-flask:python3.9-alpine
 $ curl localhost
 ```

@@ -1,4 +1,4 @@
-FROM python:3.8-alpine3.13
+FROM python:3.9-alpine3.13
 LABEL maintainer="Ivan Muratov <binakot@gmail.com>"
 
 RUN apk update
@@ -25,7 +25,7 @@ ENV UWSGI_PROCESSES 16
 ENV NGINX_MAX_UPLOAD 0
 ENV NGINX_WORKER_PROCESSES 1
 ENV LISTEN_PORT 80
-ENV ALPINEPYTHON python3.8
+ENV ALPINEPYTHON python3.9
 
 COPY requirements.txt /tmp/requirements.txt
 RUN pip install --no-cache-dir -r /tmp/requirements.txt
